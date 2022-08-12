@@ -3,9 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
+    box-sizing: border-box;
     font-family: 'Karla', sans-serif;
 }
 
@@ -13,6 +11,7 @@
 /* Cores Primárias */
 
 ---Cyan: hsl(179, 62%, 43%);
+---Cyan2: hsla(179, 62%, 43%, 0.911);
 ---BrightYellow: hsl(71, 73%, 54%);
 
 /* Cores Secundárias */
@@ -24,6 +23,70 @@
 
 ---fonte: 'Karla', sans-serif; /* weights: 400,700 */
 }
+
+body {
+    background-color: var(---GrayishBlue);
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    background-color: var(---LightGray);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: auto;
+}
+
+div.row {
+    display: flex;
+}
+
+.row section {
+    width: 50%;
+}
+
+section {
+    padding: 35px;
+}
+
+section.top h1 {
+    font-weight: 700;
+    color: var(---Cyan);
+}
+
+section.top h3 {
+    color: var(---BrightYellow);
+    font-weight: 700;
+}
+
+section.top p {
+    color: var(---GrayishBlue);
+    font-weight: 400;
+}
+
+section.left {
+    background-color: var(---Cyan);
+    border-bottom-left-radius: 10px;
+    color: var(---LightGray);
+}
+
+section.left span {
+    color: var(---LightGray);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+section.right {
+    background-color: var(---Cyan2);
+    border-bottom-right-radius: 10px;
+    color: var(---LightGray);
+}
+
 
 /*
 .attribution { 
